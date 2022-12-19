@@ -38,12 +38,12 @@ common buildenv
     build-depends:
         base ^>=4.8.2 || ^>=4.9.1 || ^>=4.10.1 || ^>=4.11.0 || ^>=4.12.0 || ^>=4.13.0 || ^>=4.14.0,
         template-haskell ^>=2.10.0 || ^>=2.11.1 || ^>=2.12.0 || ^>=2.13.0 || ^>=2.14.0 || ^>=2.15.0 || ^>=2.16.0,
+    ghc-options: -Wall
 
 library
     import: buildenv
     exposed-modules:
         Unsafe.TrueName
-    ghc-options: -Wall
 
 test-suite sanity
     import: buildenv
@@ -54,7 +54,6 @@ test-suite sanity
         containers ^>=0.5.6 || ^>=0.6.0,
         time ^>=1.1.2 || ^>=1.5.0 || ^>=1.6.0 || ^>=1.8.0 || ^>=1.9,
         true-name,
-    ghc-options: -Wall
 
 -- vim: et sw=4 ts=4 sts=4:
 
