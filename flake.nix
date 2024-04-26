@@ -19,7 +19,11 @@
     overlay = final: prev: {
       haskellPackages = prev.haskellPackages.extend haskell-overlay;
     };
-  in
+  in {
+      overlays = {
+        default = overlay;
+      };
+    } //
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {
         inherit system;
@@ -31,10 +35,6 @@
       packages = {
         true-name = hspkgs.${pkg-name};
         default = hspkgs.${pkg-name};
-      };
-
-      overlays = {
-        default = overlay;
       };
 
       devShell = hspkgs.shellFor {
