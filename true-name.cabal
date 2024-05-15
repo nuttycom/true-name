@@ -1,3 +1,5 @@
+cabal-version:  3.0
+
 name:           true-name
 version:        0.1.0.4
 synopsis:       Template Haskell hack to violate module abstractions
@@ -8,18 +10,15 @@ description:
     constructors, record fields or class methods―a slightly less unsafe way
     to violate another module's abstractions than @unsafeCoerce@.
     .
-    A few <https://github.com/liyang/true-name/blob/master/test/sanity.hs quick examples>.
-    .
-    I'm too lazy to keep a changelog, but I do write <https://github.com/liyang/true-name/commits/master detailed commit messages>.
-homepage:       https://github.com/liyang/true-name
-license:        BSD3
+    A few <https://github.com/haskell-github-trust/true-name/blob/master/test/sanity.hs quick examples>.
+homepage:       https://github.com/haskell-github-trust/true-name
+license:        BSD-3-Clause
 license-file:   LICENSE
 author:         Liyang HU
-maintainer:     true-name@liyang.hu
+maintainer:     kris@nutty.land
 copyright:      © 2014−2021 Liyang HU
 category:       Data, Unsafe
 build-type:     Simple
-cabal-version:  >= 1.10
 stability:      experimental
 tested-with:
     GHC == 7.4.2, GHC == 7.6.3, GHC == 7.8.4, GHC == 7.10.3,
@@ -29,7 +28,7 @@ tested-with:
 
 source-repository head
     type:       git
-    location:   https://github.com/liyang/true-name
+    location:   https://github.com/haskell-github-trust/true-name
 
 library
     default-language: Haskell2010

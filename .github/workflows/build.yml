@@ -146,7 +146,7 @@
           }
         },
         {
-          "run": "mkdir -p dist-newstyle/cache\nmv plans/plan-${{ runner.os }}-9.8.1.json dist-newstyle/cache/plan.json\n"
+          "run": "mkdir -p dist-newstyle/cache\nmv plans/plan-${{ runner.os }}-8.10.1.json dist-newstyle/cache/plan.json\n"
         },
         {
           "name": "check if licenses have changed",
